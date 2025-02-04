@@ -6,5 +6,6 @@ import Engagement from "./programs/engagement/Engagement";
 import Enhancement from "./programs/enhancement/Enhancement";
 import Registration from "./registration/Registration";
 import Login from "./login/Login";
+import Sample from "./sample/Sample";
 
-export { Home, About, Contact, Empowerment, Engagement, Enhancement,Registration,Login };
+export { Home, About, Contact, Empowerment, Engagement, Enhancement,Registration,Login,Sample };

@@ -26,7 +26,7 @@ const Footer = () => {
             </button>
           </form>
         </div>
-        <div className="h-auto w-full bg-blue-950" >
+        <div className="h-auto w-full bg-[#BF2EF0]" >
           <div className="w-full flex items-center justify-start pt-5 md:pt-20  pb-5">
             <div className="w-full lg:w-4/5 flex flex-col items-center justify-center lg:flex-row lg:items-end lg:justify-around mb-5 gap-10">
               <div className="w-28 h-28 md:w-36 md:h-36">

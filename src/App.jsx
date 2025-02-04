@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route,Routes } from 'react-router';
 import { Navbar,Footer } from './components';
-import { Home,About,Contact,Registration,Login,Empowerment,Enhancement,Engagement } from './pages';
+import { Home,About,Contact,Registration,Login,Empowerment,Enhancement,Engagement,Sample } from './pages';
 
 function App() {
   return <>
@@ -15,6 +15,7 @@ function App() {
   <Route path={'/enhancement'} element={<Enhancement/>}/>
   <Route path={'/registration'} element={<Registration/>}/>
   <Route path={'/login'} element={<Login/>}/>
+  {/* <Route path={'/sample'} element={<Sample/>}/> */}
 </Routes>
 <Footer/>
   </>

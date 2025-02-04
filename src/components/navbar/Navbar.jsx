@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
         <div>
             <button className='capitalize px-5 py-2 rounded-3xl text-base cursor-pointer outline-none' onClick={()=>{handleClick('/login')}}>login</button>
-            <button className='capitalize px-5 py-2 rounded-3xl text-base bg-orange-600 hover:bg-orange-500 text-white cursor-pointer outline-none' onClick={()=>{handleClick('/registration')}}>register</button>
+            <button className='capitalize px-5 py-2 rounded-3xl text-base bg-[#BF2EF0] hover:bg-orange-500 text-white cursor-pointer outline-none' onClick={()=>{handleClick('/registration')}}>register</button>
         </div>
     </nav>
   </header>
