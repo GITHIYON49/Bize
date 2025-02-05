@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import { ChevronRight } from "lucide-react";
 import { titleCardData } from "../../data/TitleCard";
 
 const TitleCard = () => {
+  const navigation = useNavigate();
+
+  function handleClick(route){
+       navigation(route);
+  }
   return (
     <>
       <div className="my-20 flex flex-col md:flex-row items-center justify-evenly gap-16 md:gap-5">
@@ -23,8 +29,9 @@ const TitleCard = () => {
             </h2>
             <span className="text-sm sm:text-base lg:text-xl text-gray-600">{data.text}</span>
             <span
-              className="rounded-full font-bold flex items-center justify-center w-8 h-8 lg:w-10 lg:h-10"
+              className="rounded-full font-bold flex items-center justify-center cursor-pointer w-8 h-8 lg:w-10 lg:h-10"
               style={{ backgroundColor: data.theam }}
+              onClick={()=>{handleClick(data.pageLink)}}
             >
               <ChevronRight className="w-7 h-7 lg:w-8 lg:h-8 text-white" />
             </span>

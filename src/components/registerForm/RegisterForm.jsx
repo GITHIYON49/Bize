@@ -67,10 +67,10 @@ const RegisterForm = () => {
               />
             </div>
             <div className="w-full flex flex-col md:flex-row items-center justify-center gap-2">
-              <button className="w-full md:w-1/2 capitalize text-white text-base py-3 rounded-md bg-orange-500">
+              <button className="w-full md:w-1/2 capitalize text-white text-base py-3 rounded-md outline-none cursor-pointer transform transition-all duration-100 ease-in-out bg-primary hover:bg-primaryLight">
                 register
               </button>
-              <button className="w-full md:w-1/2 capitalize text-gray-500 text-base py-3 rounded-md bg-gray-200">
+              <button className="w-full md:w-1/2 capitalize text-gray-500 text-base py-3 rounded-md outline-none cursor-pointer bg-gray-200">
                 login
               </button>
             </div>

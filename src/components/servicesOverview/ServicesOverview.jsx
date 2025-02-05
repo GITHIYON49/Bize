@@ -14,7 +14,7 @@ const ServicesOverview = () => {
               As a member of BIZ E, you will have access to exclusive events, workshops, and seminars designed to address the specific challenges faced by business today. These opportunities are curated to provide you with the most relevant and actionable insights.
               </p>
             </div>
-            <div className="bg-orange-500 w-full lg:w-1/3 lg:min-h-72 flex flex-col shadow-xl  items-start justify-end p-5 gap-4 text-white">
+            <div className="bg-primary w-full lg:w-1/3 lg:min-h-72 flex flex-col shadow-xl  items-start justify-end p-5 gap-4 text-white">
               <h6 className="w-full text-xl md:text-2xl text-center lg:text-start font-bold  capitalize">
               Personalized <span className="lg:block">Support</span>
               </h6>
@@ -31,7 +31,7 @@ const ServicesOverview = () => {
               BIZ E helps you amplify your business presence within the industry . Through our platform, your business gains visibility and credibility positioning you as a leader in your field. This influence can open doors to new partnerships, customers and growth opportunities.
               </p>
             </div>
-            <div className="bg-teal-500 w-full lg:w-1/3 lg:min-h-72 flex flex-col shadow-xl items-start justify-end p-5 gap-4 text-white ">
+            <div className="bg-[#12CAD6] w-full lg:w-1/3 lg:min-h-72 flex flex-col shadow-xl items-start justify-end p-5 gap-4 text-white ">
               <h6 className="w-full text-xl md:text-2xl text-center lg:text-start font-bold  capitalize">
               Collaborative<span className="lg:block">Environment</span>
               </h6>

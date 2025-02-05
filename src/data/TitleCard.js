@@ -6,7 +6,7 @@ export const titleCardData = [
         title:"Engagement",
         text:"with Ideas",
         pageLink:"/engagement",
-        theam:"var(--color-orange-500)"
+        theam:"#FA163F"
 
     },
     {
@@ -14,7 +14,7 @@ export const titleCardData = [
         title:"Enhancement",
         text:"of Profiles",
         pageLink:"/enhancement",
-        theam:"var(--color-teal-500)"
+        theam:"#12CAD6"
 
     },
     {
@@ -22,7 +22,7 @@ export const titleCardData = [
         title:"Empowerment",
         text:"through Resources",
         pageLink:"/empowerment",
-        theam:"var(--color-blue-900)"
+        theam:"var(--color-teal-400)"
 
     }
 ]

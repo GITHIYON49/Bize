@@ -4,6 +4,9 @@ import image3 from "./ourmission-image.jpg";
 import image4 from "./image4.jpg";
 import banner1 from "./about_banner.jpg";
 import banner2 from "./telephone.jpg";
+import banner3 from "./empowerment_banner.jpg";
+import banner4 from "./engagement_banner.jpg";
+import banner5 from "./enhancement_banner.png";
 import carouselImage1 from "./carousel-image1.jpg";
 import carouselImage2 from "./carousel-image2.jpg";
 import carouselImage3 from "./carousel-image3.jpg";
@@ -18,6 +21,9 @@ export {
   image3,
   image4,
   banner2,
+  banner3,
+  banner4,
+  banner5,
   carouselImage1,
   carouselImage2,
   carouselImage3,

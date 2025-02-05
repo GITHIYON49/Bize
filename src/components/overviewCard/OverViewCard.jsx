@@ -1,8 +1,13 @@
 import React from "react";
-import { overViewData } from "../../data/OverViewCard";
+import { useNavigate } from "react-router";
 
 const OverViewCard = ({data,className}) => {
   // const data = overViewData[0];
+  const navigation  = useNavigate();
+  function handleClick(route){
+    navigation(route);
+
+  }
   return (
     <>
       <section className="w-full flex items-center justify-center my-10">
@@ -23,7 +28,7 @@ const OverViewCard = ({data,className}) => {
               )
             }
             {data?.buttonName && (
-              <button className="bg-orange-500 text-white px-5 py-2 text-base capitalize outline-none">
+              <button className={`bg-secondary hover:bg-secondaryLight transform transition-all duration-100 ease-in-out text-white px-5 py-2 text-base capitalize outline-none cursor-pointer`} onClick={()=>{handleClick(data.buttonName === 'Read More' ? '/about' : '/registration')}}>
                 {data.buttonName}
               </button>
             )}

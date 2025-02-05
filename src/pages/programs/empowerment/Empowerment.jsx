@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Banner from '../../../components/banner/Banner';
+import { banner3 } from '../../../assets/images';
+
+const bannerContent = {
+  heading:"Empowerment through Resources",
+  description: "By providing access to critical resources and support, we empower businesses to achieve sustained success.",
+  picture:banner3
+}
 
 const Empowerment = () => {
   return <>
-  <h1>Empowerment page</h1>
+ <Banner data={bannerContent}/>
   </>
 }
 

@@ -40,7 +40,7 @@ const LoginForm = () => {
               />
             </div>
             <div className="w-3/5">
-              <button className="capitalize w-full py-3 bg-orange-500 hover:bg-orange-400 text-sm rounded-sm  text-white cursor-pointer">
+              <button className="capitalize w-full py-3 bg-primary hover:bg-primaryLight transform transition-all duration-100 ease-in-out text-sm rounded-sm  text-white cursor-pointer">
                 login
               </button>
               <span className="block w-full text-gray-500 text-center text-sm cursor-pointer my-5">
