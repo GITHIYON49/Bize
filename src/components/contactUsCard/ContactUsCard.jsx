@@ -15,7 +15,9 @@ const ContactUsCard = () => {
                   <data.icon className="w-6 h-6 lg:h-8 lg:w-8" />
                 </span>
                 <div className="flex flex-col items-center justify-center gap-2">
-                  <h3 className="text-xl lg:text-2xl font-semibold">{data.name}</h3>
+                  <h3 className="text-xl lg:text-2xl font-semibold">
+                    {data.name}
+                  </h3>
                   <span className="text-sm lg:text-lg">{data.address}</span>
                 </div>
               </div>

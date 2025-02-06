@@ -10,7 +10,8 @@ import ContactUsCard from "./contactUsCard/ContactUsCard";
 import ContactForm from "./contactForm/ContactForm";
 import RegisterForm from "./registerForm/RegisterForm";
 import LoginForm from "./loginForm/LoginForm";
-import Carousel from "./carousel/Carousel"
+import Carousel from "./carousel/Carousel";
+import ScrollToTop from "./scrollToTop/ScrollToTop";
 
 export {
   Navbar,
@@ -25,5 +26,6 @@ export {
   ContactForm,
   RegisterForm,
   LoginForm,
-  Carousel
+  Carousel,
+  ScrollToTop
 };

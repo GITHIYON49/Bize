@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer className=" text-white flex flex-col items-center relative md:mt-40">
-        <div className="w-full md:w-11/12 h-auto bg-[#E4F9FF] md:absolute md:-top-36 text-black flex flex-col lg:flex-row items-center justify-evenly py-10">
+        <div className="w-full md:w-11/12 h-auto bg-light md:absolute md:-top-36 text-black flex flex-col lg:flex-row items-center justify-evenly py-8">
           <p className="w-4/5 md:w-3/5 text-center lg:text-start lg:w-2/5 text-xl lg:text-2xl xl:text-3xl font-extralight p-4">
             Get Updates And Stay Connected -Subscribe To Our Newsletter
           </p>
@@ -26,8 +26,8 @@ const Footer = () => {
             </button>
           </form>
         </div>
-        <div className="h-auto w-full bg-tertiary py-3" >
-          <div className="w-full flex items-center justify-start pt-5 md:pt-20  pb-5">
+        <div className="h-auto w-full bg-tertiary py-3">
+          <div className="w-full flex items-center justify-start pt-5 md:pt-10  pb-5">
             <div className="w-full lg:w-4/5 flex flex-col items-center justify-center lg:flex-row lg:items-end lg:justify-around mb-5 gap-10">
               <div className="w-28 h-28 md:w-36 md:h-36">
                 <img
@@ -48,9 +48,7 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div className="flex flex-col items-center lg:items-start justify-center gap-5 lg:gap-6 text-base">
-                  <h6 className="uppercase text-gray-800 font-bold">
-                    company
-                  </h6>
+                  <h6 className="uppercase text-gray-800 font-bold">company</h6>
                   <ul className="flex flex-col text-center md:text-start gap-1">
                     <li>About</li>
                     <li>Register</li>

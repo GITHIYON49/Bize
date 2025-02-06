@@ -11,7 +11,10 @@ const RegisterForm = () => {
           </span>
         </div>
         <div className="w-full flex items-center justify-center">
-          <form action="" className="w-4/5 sm:w-3/5 md:w-1/2 lg:w-1/3 flex flex-col gap-5">
+          <form
+            action=""
+            className="w-4/5 sm:w-3/5 md:w-1/2 lg:w-1/3 flex flex-col gap-5"
+          >
             <div className="w-full flex flex-col items-start justify-center gap-2">
               <label htmlFor="" className="capitalize text-sm font-medium">
                 user name

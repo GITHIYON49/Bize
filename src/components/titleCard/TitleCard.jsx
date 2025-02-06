@@ -6,8 +6,8 @@ import { titleCardData } from "../../data/TitleCard";
 const TitleCard = () => {
   const navigation = useNavigate();
 
-  function handleClick(route){
-       navigation(route);
+  function handleClick(route) {
+    navigation(route);
   }
   return (
     <>
@@ -27,11 +27,15 @@ const TitleCard = () => {
             <h2 className="text-center text-xl sm:text-2xl lg:text-3xl capitalize font-bold">
               {data.title}
             </h2>
-            <span className="text-sm sm:text-base lg:text-xl text-gray-600">{data.text}</span>
+            <span className="text-sm sm:text-base lg:text-xl text-gray-600">
+              {data.text}
+            </span>
             <span
               className="rounded-full font-bold flex items-center justify-center cursor-pointer w-8 h-8 lg:w-10 lg:h-10"
               style={{ backgroundColor: data.theam }}
-              onClick={()=>{handleClick(data.pageLink)}}
+              onClick={() => {
+                handleClick(data.pageLink);
+              }}
             >
               <ChevronRight className="w-7 h-7 lg:w-8 lg:h-8 text-white" />
             </span>

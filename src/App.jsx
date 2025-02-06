@@ -1,10 +1,11 @@
 import React from 'react';
 import { Route,Routes } from 'react-router';
-import { Navbar,Footer } from './components';
-import { Home,About,Contact,Registration,Login,Empowerment,Enhancement,Engagement,Sample } from './pages';
+import { Navbar,Footer,ScrollToTop } from './components';
+import { Home,About,Contact,Registration,Login,Empowerment,Enhancement,Engagement } from './pages';
 
 function App() {
   return <>
+<ScrollToTop/>
 <Navbar/>
 <Routes>
   <Route path={'/'} element={<Home/>}/>
@@ -15,7 +16,6 @@ function App() {
   <Route path={'/enhancement'} element={<Enhancement/>}/>
   <Route path={'/registration'} element={<Registration/>}/>
   <Route path={'/login'} element={<Login/>}/>
-  {/* <Route path={'/sample'} element={<Sample/>}/> */}
 </Routes>
 <Footer/>
   </>

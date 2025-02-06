@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router";
 
 const OverViewCard = ({data,className}) => {
-  // const data = overViewData[0];
   const navigation  = useNavigate();
   function handleClick(route){
     navigation(route);

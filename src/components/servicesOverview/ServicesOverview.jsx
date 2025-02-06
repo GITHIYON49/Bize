@@ -31,7 +31,7 @@ const ServicesOverview = () => {
               BIZ E helps you amplify your business presence within the industry . Through our platform, your business gains visibility and credibility positioning you as a leader in your field. This influence can open doors to new partnerships, customers and growth opportunities.
               </p>
             </div>
-            <div className="bg-[#12CAD6] w-full lg:w-1/3 lg:min-h-72 flex flex-col shadow-xl items-start justify-end p-5 gap-4 text-white ">
+            <div className="bg-secondary w-full lg:w-1/3 lg:min-h-72 flex flex-col shadow-xl items-start justify-end p-5 gap-4 text-white ">
               <h6 className="w-full text-xl md:text-2xl text-center lg:text-start font-bold  capitalize">
               Collaborative<span className="lg:block">Environment</span>
               </h6>

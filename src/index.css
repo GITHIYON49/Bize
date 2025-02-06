@@ -15,9 +15,9 @@ h6 {
 }
 
 @theme {
-  --color-primary: #fa163f;
+  --color-primary:  #fa163f;
   --color-primaryLight: #fa163fc2;
-  --color-secondary: #12cad6;
+  --color-secondary:#12cad6;
   --color-secondaryLight: #12cad6bd;
   --color-tertiary: #0fabbc;
   --color-tertiaryLight: #0fabbcc4;  
