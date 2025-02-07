@@ -7,4 +7,13 @@ import Enhancement from "./programs/enhancement/Enhancement";
 import Registration from "./registration/Registration";
 import Login from "./login/Login";
 
-export { Home, About, Contact, Empowerment, Engagement, Enhancement,Registration,Login};
+export {
+  Home,
+  About,
+  Contact,
+  Empowerment,
+  Engagement,
+  Enhancement,
+  Registration,
+  Login,
+};

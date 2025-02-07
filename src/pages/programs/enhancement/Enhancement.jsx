@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
+import { Banner } from "../../../components";
+import { banner5 } from "../../../assets/images";
+
+const bannerContent = {
+  heading: "Enhancement of Profiles",
+  description:
+    "We offer tailored solutions designed to enhance the visibility, reputation, and operational effectiveness of businesses.",
+  picture: banner5,
+  color: "#12cad6",
+};
 
 const Enhancement = () => {
-  return <>
-  <h1>Enhancement page</h1>
-  </>
-}
+  return (
+    <>
+      <Banner data={bannerContent} />
+    </>
+  );
+};
 
-export default Enhancement
+export default Enhancement;

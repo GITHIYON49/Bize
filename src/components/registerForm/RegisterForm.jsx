@@ -1,6 +1,55 @@
 import React from "react";
+import { useNavigate } from "react-router";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 const RegisterForm = () => {
+  const navigate = useNavigate();
+  const schema = z.object({
+    username: z
+      .string({ required_error: "Please enter a username." })
+      .min(8, "Username must be at least 8 characters long."),
+
+    firstname: z
+      .string({ required_error: "Please enter your first name." })
+      .min(1, "First name is required."),
+
+    lastname: z
+      .string({ required_error: "Please enter your last name." })
+      .min(8, "Last name must be at least 8 characters long."),
+
+    email: z
+      .string({ required_error: "Please enter your email address." })
+      .email("Please enter a valid email address."),
+
+    password: z
+      .string({ required_error: "Please enter a password." })
+      .min(8, "Password must be at least 8 characters long."),
+
+    confirmPassword: z
+      .string({ required_error: "Please confirm your password." })
+      .min(8, "Confirm password must be at least 8 characters long."),
+  });
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset
+  } = useForm({
+    resolver: zodResolver(schema),
+  });
+
+  const onSubmit = async (data) => {
+    await new Promise((reslove) => setTimeout(reslove, 1000));
+    console.log(data);
+    reset()
+  };
+
+  function handleClick() {
+    navigate("/login");
+  }
   return (
     <>
       <section className="w-full flex flex-col items-center justify-center gap-16 my-10">
@@ -14,6 +63,7 @@ const RegisterForm = () => {
           <form
             action=""
             className="w-4/5 sm:w-3/5 md:w-1/2 lg:w-1/3 flex flex-col gap-5"
+            onSubmit={handleSubmit(onSubmit)}
           >
             <div className="w-full flex flex-col items-start justify-center gap-2">
               <label htmlFor="" className="capitalize text-sm font-medium">
@@ -22,7 +72,13 @@ const RegisterForm = () => {
               <input
                 type="text"
                 className="w-full border-2 border-gray-300 p-2.5 rounded-xs outline-none"
+                {...register("username")}
               />
+              {errors.username && (
+                <div className="text-base text-red-500">
+                  {errors.username.message}
+                </div>
+              )}
             </div>
             <div className="w-full flex flex-col items-start justify-center gap-2">
               <label htmlFor="" className="capitalize text-sm font-medium">
@@ -31,7 +87,13 @@ const RegisterForm = () => {
               <input
                 type="text"
                 className="w-full border-2 border-gray-300 p-2.5 rounded-xs outline-none"
+                {...register("firstname")}
               />
+              {errors.firstname && (
+                <div className="text-base text-red-500">
+                  {errors.firstname.message}
+                </div>
+              )}
             </div>
             <div className="w-full flex flex-col items-start justify-center gap-2">
               <label htmlFor="" className="capitalize text-sm font-medium">
@@ -40,7 +102,13 @@ const RegisterForm = () => {
               <input
                 type="text"
                 className="w-full border-2 border-gray-300 p-2.5 rounded-xs outline-none"
+                {...register("lastname")}
               />
+              {errors.lastname && (
+                <div className="text-base text-red-500">
+                  {errors.lastname.message}
+                </div>
+              )}
             </div>
             <div className="w-full flex flex-col items-start justify-center gap-2">
               <label htmlFor="" className="capitalize text-sm font-medium">
@@ -49,31 +117,58 @@ const RegisterForm = () => {
               <input
                 type="text"
                 className="w-full border-2 border-gray-300 p-2.5 rounded-xs outline-none"
+                {...register("email")}
               />
+              {errors.email && (
+                <div className="text-base text-red-500">
+                  {errors.email.message}
+                </div>
+              )}
             </div>
             <div className="w-full flex flex-col items-start justify-center gap-2">
               <label htmlFor="" className="capitalize text-sm font-medium">
                 password
               </label>
               <input
-                type="text"
+                type="password"
                 className="w-full border-2 border-gray-300 p-2.5 rounded-xs outline-none"
+                {...register("password")}
+                autoComplete="on"
               />
+              {errors.password && (
+                <div className="text-base text-red-500">
+                  {errors.password.message}
+                </div>
+              )}
             </div>
             <div className="w-full flex flex-col items-start justify-center gap-2">
               <label htmlFor="" className="capitalize text-sm font-medium">
                 confirm password
               </label>
               <input
-                type="text"
+                type="password"
                 className="w-full border-2 border-gray-300 p-2.5 rounded-xs outline-none"
+                {...register("confirmPassword")}
+                autoComplete="on"
               />
+              {errors.confirmPassword && (
+                <div className="text-base text-red-500">
+                  {errors.confirmPassword.message}
+                </div>
+              )}
             </div>
             <div className="w-full flex flex-col md:flex-row items-center justify-center gap-2">
-              <button className="w-full md:w-1/2 capitalize text-white text-base py-3 rounded-md outline-none cursor-pointer transform transition-all duration-100 ease-in-out bg-primary hover:bg-primaryLight">
-                register
+              <button
+                disabled={isSubmitting}
+                type="submit"
+                className="w-full md:w-1/2 capitalize text-white text-base py-3 rounded-md outline-none cursor-pointer transform transition-all duration-100 ease-in-out bg-primary hover:bg-primaryLight"
+              >
+                {isSubmitting ? "...loading" : "register"}
               </button>
-              <button className="w-full md:w-1/2 capitalize text-gray-500 text-base py-3 rounded-md outline-none cursor-pointer bg-gray-200">
+              <button
+                onClick={handleClick}
+                className="w-full md:w-1/2 capitalize text-gray-500 text-base py-3 rounded-md outline-none cursor-pointer bg-gray-200"
+              >
                 login
               </button>
             </div>

@@ -1,28 +1,25 @@
-import { Handshake,Lightbulb,HandHelping } from 'lucide-react';
+import { Handshake, Lightbulb, HandHelping } from "lucide-react";
 
 export const titleCardData = [
-    {
-        icon:Handshake,
-        title:"Engagement",
-        text:"with Ideas",
-        pageLink:"/engagement",
-        theam:"#FA163F"
-
-    },
-    {
-        icon:Lightbulb,
-        title:"Enhancement",
-        text:"of Profiles",
-        pageLink:"/enhancement",
-        theam:"#12CAD6"
-
-    },
-    {
-        icon:HandHelping,
-        title:"Empowerment",
-        text:"through Resources",
-        pageLink:"/empowerment",
-        theam:"var(--color-teal-400)"
-
-    }
-]
+  {
+    icon: Handshake,
+    title: "Engagement",
+    text: "with Ideas",
+    pageLink: "/engagement",
+    theam: "#FA163F",
+  },
+  {
+    icon: Lightbulb,
+    title: "Enhancement",
+    text: "of Profiles",
+    pageLink: "/enhancement",
+    theam: "#12CAD6",
+  },
+  {
+    icon: HandHelping,
+    title: "Empowerment",
+    text: "through Resources",
+    pageLink: "/empowerment",
+    theam: "var(--color-teal-400)",
+  },
+];

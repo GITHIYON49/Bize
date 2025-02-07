@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
 import { menus } from "../../data/MenuBar";
-import { menu } from "motion/react-client";
 
 const Navbar = () => {
   const navigation = useNavigate();
@@ -11,11 +10,9 @@ const Navbar = () => {
     navigation(route);
   }
 
+  const filteredMenus =
+    window.innerWidth >= 768 ? menus.filter((menu) => !menu.singin) : menus;
 
-  const filteredMenus = window.innerWidth >= 768 
-  ? menus.filter(menu => !menu.singin)
-  :menus  ;
-  
   return (
     <>
       <header className="w-full h-28 md:h-32 lg:h-36 shadow-lg bg-light sticky top-0 z-[999]">
@@ -30,14 +27,9 @@ const Navbar = () => {
             </Link>
           </div>
           <ul className="flex gap-8 capitalize">
-            {
-              filteredMenus?.map((menu,i)=>{
-                return <DesktopMenu key={i} menu={menu}/>
-                
-
-              })
-            }
-            
+            {filteredMenus?.map((menu, i) => {
+              return <DesktopMenu key={i} menu={menu} />;
+            })}
           </ul>
           <div className="hidden md:flex items-center justify-center gap-2">
             <button
@@ -58,7 +50,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex lg:hidden">
-          <MobileMenu menus={menus}/>
+            <MobileMenu menus={menus} />
           </div>
         </nav>
       </header>
