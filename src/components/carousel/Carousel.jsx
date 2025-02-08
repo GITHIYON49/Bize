@@ -48,7 +48,7 @@ const Carousel = () => {
   }
 
   return (
-    <section className="w-full h-[450px] overflow-hidden relative">
+    <section className="w-full h-[450px] overflow-hidden relative z-0">
       <div
         className="h-full w-full flex transition-opacity duration-500 ease-in-out"
         style={{ transform: `translateX(-${sliderCount * 100}%)` }}

@@ -60,7 +60,7 @@ const DesktopMenu = ({ menu }) => {
                       to={submenu.route}
                       className={`${
                         pathname === submenu.route && "bg-primary text-white"
-                      } w-full p-3 block hover:bg-primary text-black hover:text-white transform transition-all duration-100 rounded-lg`}
+                      } w-full p-3 block hover:bg-primary text-black hover:text-white transform transition-all duration-100 rounded-lg z-[999]`}
                     >
                       {submenu.name}
                     </Link>

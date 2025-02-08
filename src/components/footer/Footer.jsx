@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
               <div className="w-full lg:w-2/5 flex flex-col gap-10 lg:flex-row items-center justify-center lg:justify-between">
                 <div className="flex flex-col items-center lg:items-start justify-center gap-5 lg:gap-6 text-base">
-                  <h6 className="uppercase text-gray-800 font-bold">
+                  <h6 className="uppercase text-[#E0E0E0] font-bold">
                     Contact Information
                   </h6>
                   <ul className="flex text-center lg:text-start flex-col gap-1">
@@ -48,7 +48,7 @@ const Footer = () => {
                   </ul>
                 </div>
                 <div className="flex flex-col items-center lg:items-start justify-center gap-5 lg:gap-6 text-base">
-                  <h6 className="uppercase text-gray-800 font-bold">company</h6>
+                  <h6 className="uppercase text-[#E0E0E0] font-bold">company</h6>
                   <ul className="flex flex-col text-center md:text-start gap-1">
                     <li>About</li>
                     <li>Register</li>
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-11/12 mx-auto flex items-center flex-col gap-5 md:gap-0 md:flex-row justify-between px-5 pb-2">
-            <span className="inline-block text-xs text-gray-800">
+            <span className="inline-block text-xs text-[#E0E0E0]">
               &copy; 2025 All rights Reserved. Powered by{" "}
               <span className="text-white">Toshiba</span>
             </span>

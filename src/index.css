@@ -15,11 +15,13 @@ h6 {
 }
 
 @theme {
-  --color-primary:  #fa163f;
-  --color-primaryLight: #fa163fc2;
-  --color-secondary:#12cad6;
-  --color-secondaryLight: #12cad6bd;
-  --color-tertiary: #0fabbc;
-  --color-tertiaryLight: #0fabbcc4;  
-  --color-light: #e4f9ff;
+  --color-primary:#FF206E;
+  --color-primaryLight: #ff4f5a;
+  --color-secondary:#12CAD6;
+  --color-secondaryLight:#17a2b8;
+  --color-tertiary:#064663;
+  --color-tertiaryLight:#008b8b;  
+  --color-light:#F8F9FA;
 }
+
+

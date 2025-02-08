@@ -3,7 +3,7 @@ import React from "react";
 const ServicesOverview = () => {
   return (
     <>
-      <section className="w-full bg-orange-50 flex flex-col items-center justify-center mt-5 lg:my-10 gap-5 py-10">
+      <section className="w-full bg-yellow-50-50 flex flex-col items-center justify-center mt-5 lg:my-10 gap-5 py-10">
         <h2 className="text-3xl font-bold capitalize">
           What makes us different
         </h2>

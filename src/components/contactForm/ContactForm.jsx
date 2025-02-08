@@ -90,7 +90,7 @@ const ContactForm = () => {
             <button
               disabled={isSubmitting}
               type="submit"
-              className="text-base capitalize w-full sm:w-fit px-5 py-3 rounded-lg outline-none cursor-pointer transform transition-all duration-100 ease-in-out bg-primary hover:bg-primaryLight text-white"
+              className="text-base capitalize w-full sm:w-fit px-5 py-3 rounded-lg outline-none cursor-pointer transform transition-all duration-100 ease-in-out bg-secondary hover:bg-primaryLight text-white"
             >
               {isSubmitting ? "...Loading" : "send message"}
             </button>

@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full h-28 md:h-32 lg:h-36 shadow-lg bg-light sticky top-0 z-[999]">
+      <header className="w-full h-28 md:h-32 lg:h-36 shadow-lg bg-light z-[999]">
         <nav className="w-[90%] md:w-[80%] h-full mx-auto flex justify-between items-center py-3">
           <div className="w-28 md:w-32 lg:w-36 h-auto">
             <Link to="/" className="outline-none">
@@ -33,7 +33,7 @@ const Navbar = () => {
           </ul>
           <div className="hidden md:flex items-center justify-center gap-2">
             <button
-              className="capitalize px-5 py-2 rounded-3xl text-base  cursor-pointer outline-none"
+              className="capitalize px-5 py-2 rounded-3xl text-base bg-tertiary text-white  cursor-pointer outline-none"
               onClick={() => {
                 handleClick("/login");
               }}
@@ -41,7 +41,7 @@ const Navbar = () => {
               login
             </button>
             <button
-              className="capitalize px-5 py-2 rounded-3xl text-base bg-primary hover:bg-primaryLight transform transition-all ease-in-out text-white cursor-pointer outline-none z-50"
+              className="capitalize px-5 py-2 rounded-3xl text-base bg-secondary hover:bg-primaryLight transform transition-all ease-in-out text-white cursor-pointer outline-none z-50"
               onClick={() => {
                 handleClick("/registration");
               }}
